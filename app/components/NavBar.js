@@ -7,6 +7,7 @@ import logoMonitoring from '/public/assets/monitoring.svg';
 import logoSecurityCamera from '/public/assets/security.svg'; 
 import logoUpdate from '/public/assets/update.svg'; 
 import logoLicense from '/public/assets/license.svg'; 
+import '../custom-css/nav.css'
 
 const Navbar = () => {
   const [selectedPage, setSelectedPage] = useState('Monitoring');
@@ -19,7 +20,7 @@ const Navbar = () => {
     <nav>
       <ul className="navbar text-sm flex flex-col gap-5">
         <li className={selectedPage === 'Monitoring' ? 'active' : ''} onClick={() => handlePageSelection('Monitoring')}>
-          <Link className='flex gap-1' href="/monitoring">
+          <Link className='flex gap-1' href="/">
            
               <Image src={logoMonitoring} alt="Monitoring Logo" width={20} height={20} />
               Monitoring

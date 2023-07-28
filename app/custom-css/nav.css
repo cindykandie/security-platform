@@ -10,15 +10,16 @@
     align-items: center;
     padding: 10px;
     border-left: 4px solid transparent;
+    border-radius: 5px;
   }
   
   .navbar li:hover {
-    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242,0.1);
   }
   
   .navbar li.active {
     border-left: 4px solid white;
-    background-color: #f2f2f2;
+
   }
   
   .arrow {
