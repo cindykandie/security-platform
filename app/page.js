@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='flex'>
           
-          <div className='w-4/4'>
+          <div>
             <HeaderSection/>
             <Benefits />
             <VideoNav />

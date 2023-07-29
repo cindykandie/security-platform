@@ -18,9 +18,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='flex items-center justify-between'>
-        <Navigation />
-        {children}
+        <main className='flex items-center justify-between m-auto lg:w-[1200px]'>
+        <div className='lg:w-[20%]'>
+            <Navigation />
+          </div>
+          <div className='lg:w-[80%]'>
+            {children}
+          </div>
+          
         </main>
       
         </body>

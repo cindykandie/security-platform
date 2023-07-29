@@ -9,12 +9,12 @@ export default function VideoNav() {
   };
 
   return (
-    <div className="flex flex-row-reverse">
-      <div className="w-2/5  text-white p-4 h-full">
-        <div className="h-full overflow-y-auto flex flex-col gap-6 pt-5">
+    <div className="flex flex-col-reverse md:flex-row-reverse">
+      <div className="w-5/5 md:w-2/5 text-white p-4 h-full">
+        <div className="h-full overflow-y-auto flex md:flex-col flex-row flex-wrap gap-6 pt-5">
           
           <div
-            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm ${
+            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm hover:bg-slate-600 ${
               selectedCamera === 'cameraOption1' ? 'bg-gray-400 text-white' : ' text-white'
             }`}
             onClick={() => handleCameraOptionClick('cameraOption1')}
@@ -22,7 +22,7 @@ export default function VideoNav() {
             Camera Rm 1
           </div>
           <div
-            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm ${
+            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm hover:bg-slate-600 ${
               selectedCamera === 'cameraOption2' ? 'bg-gray-400 text-white' : ' text-white'
             }`}
             onClick={() => handleCameraOptionClick('cameraOption2')}
@@ -30,7 +30,7 @@ export default function VideoNav() {
             Camera Rm 2
           </div>
           <div
-            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm ${
+            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm hover:bg-slate-600 ${
               selectedCamera === 'cameraOption3' ? 'bg-gray-400 text-white' : ' text-white'
             }`}
             onClick={() => handleCameraOptionClick('cameraOption3')}
@@ -38,7 +38,7 @@ export default function VideoNav() {
             PlayRoom
           </div>
           <div
-            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm  ${
+            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm hover:bg-slate-600   ${
               selectedCamera === 'cameraOption4' ? 'bg-gray-400 text-white' : ' text-white'
             }`}
             onClick={() => handleCameraOptionClick('cameraOption4')}
@@ -46,7 +46,7 @@ export default function VideoNav() {
             Garden
           </div>
           <div
-            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm  ${
+            className={`camera-option cursor-pointer mb-2 px-2 rounded text-sm  hover:bg-slate-600 ${
               selectedCamera === 'cameraOption5' ? 'bg-gray-400 text-white' : ' text-white'
             }`}
             onClick={() => handleCameraOptionClick('cameraOption5')}
@@ -56,7 +56,7 @@ export default function VideoNav() {
           
         </div>
       </div>
-      <div className="w-3/5">
+      <div className="w-5/5 md:w-3/5">
         <div className="border border-slate-500 p-4 h-[395px] rounded-xl">
           {selectedCamera === 'cameraOption1' && (
             <img src="/assets/cam1.jpeg" alt="Camera Option 1" className="w-full h-[100%]" />

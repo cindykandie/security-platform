@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav>
       <ul className="navbar text-sm flex flex-col gap-5">
         <li className={selectedPage === 'Monitoring' ? 'active' : ''} onClick={() => handlePageSelection('Monitoring')}>
-          <Link className='flex gap-1' href="/">
+          <Link className='flex gap-3 relative' href="/">
            
               <Image src={logoMonitoring} alt="Monitoring Logo" width={20} height={20} />
               Monitoring
@@ -28,8 +28,8 @@ const Navbar = () => {
           
           </Link>
         </li>
-        <li className={selectedPage === 'Security Camera' ? 'active' : ''} onClick={() => handlePageSelection('Security Camera')}>
-          <Link className='flex gap-1' href="/securitycamera">
+        <li className={selectedPage === 'Security Camera' ? 'active' : 'w-full'} onClick={() => handlePageSelection('Security Camera')}>
+          <Link className='flex gap-3' href="/securitycamera">
           
               <Image src={logoSecurityCamera} alt="Security Camera Logo" width={20} height={20} />
               Security Camera
@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={selectedPage === 'Update' ? 'active' : ''} onClick={() => handlePageSelection('Update')}>
-          <Link className='flex gap-1' href="/update">
+          <Link className='flex gap-3' href="/update">
             
               <Image src={logoUpdate} alt="Update Logo" width={20} height={20} />
               Update
@@ -47,7 +47,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={selectedPage === 'License' ? 'active' : ''} onClick={() => handlePageSelection('License')}>
-          <Link className='flex gap-1' href="/license">
+          <Link className='flex gap-3' href="/license">
             
               <Image src={logoLicense} alt="License Logo" width={20} height={20} />
               License

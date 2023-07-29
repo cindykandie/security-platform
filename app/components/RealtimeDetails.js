@@ -2,7 +2,7 @@ import React from 'react';
 
 function RealtimeDetails() {
   return (
-    <div className="details-section  rounded text-xs">
+    <div className="details-section  rounded text-xs ml-4">
       
       <div className="detail-item flex flex-col mb-2">
         <span className="detail-label font-bold mr-0">Managed by:</span>
