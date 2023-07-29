@@ -6,7 +6,7 @@ import CtaSection from './CtaSection'
 
 function Navigation() {
   return (
-    <div className='flex flex-col w-[300px] justify-between content-between h-[100vh] px-6 py-2'>
+    <div className='flex flex-col max-w-[500px] justify-between content-between h-[100vh] px-6 py-2'>
         
         <div className='flex flex-col gap-4'>
           <LogoDisplay/>
